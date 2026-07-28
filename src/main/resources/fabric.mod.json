@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "modding-test",
+	"version": "${version}",
+	"name": "modding test",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modding-test/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.moddingtest.ModdingTest"
+		],
+		"client": [
+			"com.moddingtest.client.ModdingTestClient"
+		],
+		"fabric-datagen": [
+			"com.moddingtest.client.ModdingTestDataGenerator"
+		]
+	},
+	"mixins": [
+		"modding-test.mixins.json",
+		{
+			"config": "modding-test.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
