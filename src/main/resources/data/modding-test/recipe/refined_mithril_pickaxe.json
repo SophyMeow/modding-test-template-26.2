@@ -1,0 +1,16 @@
+{
+"type": "minecraft:crafting_shaped",
+"pattern": [
+"MMM",
+" S ",
+" S "
+],
+"key": {
+"M": "modding-test:refined_mithril",
+"S": "minecraft:stick"
+},
+"result": {
+"id": "modding-test:refined_mithril_pickaxe",
+"count": 1
+}
+}

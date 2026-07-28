@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 1,
+  "group": "refined_mithril",
+  "ingredient": "modding-test:mithril",
+  "result": {
+    "id": "modding-test:refined_mithril"
+  }
+}
