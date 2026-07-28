@@ -35,7 +35,7 @@ public class ModBlocks {
     public static final Block MITHRIL = register(
             ModBlockItemIds.MITHRIL,
             Block::new,
-            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops()
+            BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).requiresCorrectToolForDrops().strength(30,1200)
     );
 
 }
