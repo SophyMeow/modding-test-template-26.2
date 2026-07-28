@@ -38,6 +38,20 @@ public class ModItems {
             REPAIRS_MITHRIL_TOOLS
     );
 
+    public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = TagKey.create(Registries.BLOCK,
+            Identifier.fromNamespaceAndPath(ModdingTest.MOD_ID, "incorrect_for_titanium_tool"));
+
+    public static final TagKey<Item> REPAIRS_TITANIUM_TOOLS = TagKey.create(BuiltInRegistries.ITEM.key(), Identifier.fromNamespaceAndPath(ModdingTest.MOD_ID, "repairs_titanium_tools"));
+
+    public static final ToolMaterial TITANIUM_TOOL_MATERIAL = new ToolMaterial(
+            INCORRECT_FOR_TITANIUM_TOOL,
+            2501, //durability
+            10F, //speed
+            0F, //attack damage bonus
+            22,  //enchantment value
+            REPAIRS_TITANIUM_TOOLS
+    );
+
 
 
     public static final Item MITHRIL_ORE = register(
@@ -56,6 +70,12 @@ public class ModItems {
             ModItemIds.REFINED_MITHRIL_PICKAXE,
             MithrilPickaxeItem::new,
             new Item.Properties().pickaxe(MITHRIL_TOOL_MATERIAL, 4.5F, -2.8F)
+    );
+
+    public static final Item TITANIUM_PICKAXE = register(
+            ModItemIds.TITANIUM_PICKAXE,
+            Item::new,
+            new Item.Properties().pickaxe(TITANIUM_TOOL_MATERIAL, 5.5F, -2.8F)
     );
 
 

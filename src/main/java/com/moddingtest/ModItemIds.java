@@ -18,6 +18,6 @@ public class ModItemIds {
     public static final ResourceKey<Item> MITHRIL_ORE = create("mithril_ore");
     public static final ResourceKey<Item> REFINED_MITHRIL = create("refined_mithril");
     public static final ResourceKey<Item> REFINED_MITHRIL_PICKAXE = create("refined_mithril_pickaxe");
-
+    public static final ResourceKey<Item> TITANIUM_PICKAXE = create("titanium_pickaxe");
 
 }
